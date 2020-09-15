@@ -88,6 +88,16 @@ ul {
   background: #000000;
 }
 
+@font-face {
+  font-family: Digiffiti;
+  font-display: swap;
+  src: url(../fonts/digiffiti.ttf);
+}
+
+svg {
+  font-family: Digiffiti;
+}
+
 .section-title {
   font-size: 36px;
   /*    margin: 0;

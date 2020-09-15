@@ -38,6 +38,16 @@ ul{
 
 
 // Styles Global
+
+@font-face{
+    font-family: Digiffiti;
+    font-display: swap;
+    src: url(../fonts/digiffiti.ttf);
+}
+
+svg{
+    font-family: Digiffiti;
+}
 .section-title {
     font-size: $font-big;
     /*    margin: 0;
