@@ -12,12 +12,6 @@
     left: 0;
     top: 20%;
   }
-  /*     div.container{
-        .col-md-6.responsive-box {
-            margin-bottom: 20px !important;
-            background-color: red;
-        }
-    } */
 }
 
 @media only screen and (max-width: 768px) {
@@ -71,35 +65,11 @@ a:hover {
   text-decoration: none;
 }
 
-
-
-@font-face {
-  font-family: Digiffiti;
-  font-display: swap;
-  src: url(../fonts/digiffiti.ttf);
-}
-
-svg {
-  font-family: Digiffiti;
-}
-
 .section-title {
   font-size: 36px;
   margin: 0;
   letter-spacing: 0px;
-  /*     &::before {
-        content: "";
-        background-image: url(https://pxltheme.com/html/bolby/demo/images/dots-bg.svg);
-        display: block;
-        height: 37px;
-        width: 37px;
-        left: -14px;
-        top: -14px;
-        position: absolute;
-    } */
 }
-
-
 
 .shadown-dark {
   -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
@@ -116,39 +86,6 @@ svg {
 
 .rounded {
   border-radius: 20px !important;
-}
-
-.text-short {
-  padding: 10px;
-  display: block;
-  width: 100%;
-  font-weight: 400;
-}
-
-.btn-default {
-  background-color: #9d00ff;
-  color: #fff;
-  display: inline-block;
-  border-radius: 0px;
-  line-height: 1;
-  vertical-align: middle;
-  padding: 8px 20px;
-  /*     font-weight: 900; */
-}
-
-.btn-default:hover {
-  background-color: #9239c9;
-  color: #fff;
-  -webkit-box-shadow: 0px 5px 20px 0px rgba(87, 67, 96, 0.1);
-          box-shadow: 0px 5px 20px 0px rgba(87, 67, 96, 0.1);
-}
-
-
-#about .short-description {
-  /* text-align: justify;
-  word-spacing: 1px;
-  word-break: break-all; */
-  color: #5E5C7F;
 }
 
 .item {
@@ -192,8 +129,7 @@ svg {
   position: relative;
 }
 
-#experinces .timeline .timeline-container .content .time,
-#experinces .timeline .timeline-container .content .place  {
+#experinces .timeline .timeline-container .content .time, #experinces .timeline .timeline-container .content .place  {
   color: #8B88B1;
   font-size: 12px;
 }
@@ -204,8 +140,7 @@ svg {
 }
 
 #experinces .timeline .timeline-container .content .title-job,
-#experinces .timeline.edu .timeline-container .content .title-job
-{
+#experinces .timeline.edu .timeline-container .content .title-job{
   margin: 0;
   font-size: 24px;
   font-weight: 800;
