@@ -3,7 +3,7 @@
     <g id="Grupo_3" data-name="Grupo 3" transform="translate(290)">
       <g id="bio" transform="translate(470 274)">
         <g id="avatar" transform="translate(51)">
-          <circle id="Oval" cx="54" cy="54" r="54" fill="#9d00ff"/>
+          <circle id="Oval" cx="54" cy="54" r="54" fill="#DFDFDE"/>
           <g id="Grupo_2" data-name="Grupo 2">
             <g id="Grupo_1" data-name="Grupo 1" transform="translate(20 17)">
               <path id="Fill-31" d="M55.636,80.753C43.853,75.852,39.973,69.763,40.979,61H28.021c1.006,8.763-2.874,14.852-14.657,19.753S0,91,0,91H69s-1.581-5.346-13.364-10.247" fill-rule="evenodd"/>

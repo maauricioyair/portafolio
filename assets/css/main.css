@@ -1,41 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800;900&display=swap");
-@media only screen and (min-width: 768px) {
-  .triangle-lef:before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 15px solid #FFF;
-    position: absolute;
-    left: 0;
-    top: 20%;
-  }
-}
 
-@media only screen and (max-width: 768px) {
-  .triagle-top:before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #FFF;
-    position: absolute;
-    left: 50%;
-    top: -10px;
-    -webkit-transform: translateX(-7.5px);
-            transform: translateX(-7.5px);
-  }
-  div.container .col-md-6.responsive-box {
-    margin-bottom: 20px;
-  }
-}
 
 body {
   font-family: "Inconsolata";
-  background-color: #F9F9FF;
+  background-color: #F0F0F0;
 }
 
 html {
@@ -51,16 +20,25 @@ hr {
   border: 0;
   height: 0;
   -webkit-box-shadow: 0 0 10px 1px black;
-          box-shadow: 0 0 10px 1px black;
+  box-shadow: 0 0 10px 1px black;
 }
 
 ul {
   list-style: none;
 }
 
+::selection {
+  background-color: #d1d1d1;
+}
+
+mark {
+  background-color: #d1d1d1;
+}
+
 a,
 a:visited,
-a:hover {  
+a:hover { 
+  color: #000; 
   text-decoration: none;
 }
 
@@ -71,8 +49,8 @@ a:hover {
 }
 
 .shadown-dark {
-  -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
-          box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
 }
 
 .padding-15 {
@@ -109,91 +87,8 @@ a:hover {
   cursor: pointer;
 }
 
-#experinces .timeline .name-experience {
-  font-weight: 900;
-  font-size: 24px;
-  color: #000;
-  padding-left: 50px;
-}
-
-#experinces .timeline .timeline-container {
-  padding-left: 50px;
-  margin-bottom: 50px;
-  background-color: inherit;
-  position: relative;
-  width: 100%;
-}
-
-#experinces .timeline .timeline-container .content {
-  position: relative;
-}
-
-#experinces .timeline .timeline-container .content .time, #experinces .timeline .timeline-container .content .place  {
-  color: #8B88B1;
-  font-size: 12px;
-}
-
-#experinces .timeline .timeline-container .content ul{
-  margin: 0;
-  padding: 0;
-}
-
-#experinces .timeline .timeline-container .content .title-job,
-#experinces .timeline.edu .timeline-container .content .title-job{
-  margin: 0;
-  font-size: 24px;
-  font-weight: 800;
-}
-
-#experinces .timeline .timeline-container .content .title, 
-#experinces .timeline.job .timeline-container .content .title {
-  font-size: 18px;
-  margin: 0px 0 0 0;
-}
-
-#experinces .timeline span.line {
-  position: absolute;
-  width: 0.5px;
-  background-color: #353353;
-  top: 80px;
-  bottom: 35px;
-  left: 35px;
-}
-
-#experinces .timeline.exp .timeline-container::after {
-  content: '💼';
-  font-size: 24px;
-  color: #FF4C60;
-  position: absolute;
-  background: white;
-  left: -7px;
-  top: 0px;
-  z-index: 1;
-}
-
-#experinces .timeline.edu .timeline-container::after {
-  content: '🎓';
-  font-size: 24px;
-  color: #FF4C60;
-  position: absolute;
-  background: white;
-  left: -7px;
-  top: 0px;
-  z-index: 1;
-}
-
-#contact .img-contact {
-  max-width: 100px;
-  max-height: 100px;
-  padding: 10px 0;
-}
-
-#contact a {
-  color: #000;
-}
-
 .btn-default {
-  background-color: #9d00ff;
+  background-color: #000;
   color: #fff;
   display: inline-block;
   border-radius: 0px;
@@ -204,7 +99,7 @@ a:hover {
 }
 
 .btn-default:hover {
-  background-color: #9239c9;
+  background-color: #000;
   color: #fff;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(87, 67, 96, 0.1);
           box-shadow: 0px 5px 20px 0px rgba(87, 67, 96, 0.1);
