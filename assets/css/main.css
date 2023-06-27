@@ -20,6 +20,11 @@ html {
   scroll-behavior: smooth;
 }
 
+a:focus,
+a:active {
+  outline: 3px solid var(--color-hover);
+}
+
 h1 , h2 {
   font-size: 16px;
 }
