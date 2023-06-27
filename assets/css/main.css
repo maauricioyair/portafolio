@@ -56,11 +56,16 @@ mark {
   background-color: var(--color-select-text);
 }
 
-a,
-a:visited,
-a:hover { 
-  color: var(--color-black); 
-  text-decoration: none;
+
+.skip-link {
+  height: 0;
+  color: var(--color-body);
+}
+
+.skip-link:focus, 
+.skip-link:active {
+  background: var(--color-black);
+  height: auto;
 }
 
 .logo {
@@ -130,4 +135,8 @@ a:hover {
 .footer-social li {
   display: inline-block;
   margin-right: 0.5rem;
+}
+
+.footer-social li a {
+  color: var(--color-black);
 }
