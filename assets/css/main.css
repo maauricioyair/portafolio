@@ -2,16 +2,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800;900&display=swap");
 
 
+:root{
+  --color-black: #000;
+  --color-white: #fff;
+  --color-body: #F0F0F0;
+  --color-select-text: #d1d1d1;
+  --color-hover: #373733;
+}
+
 body {
   font-family: "Inconsolata";
-  background-color: #F0F0F0;
+  background-color: var(--color-body);
+  font-weight: 300;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-section {
+h1 , h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 36px;  
+}
+
+h4 {
+  font-size: 28px;
+}
+
+section, footer {
   padding-top: 60px;
   position: relative;
 }
@@ -19,8 +40,8 @@ section {
 hr {
   border: 0;
   height: 0;
-  -webkit-box-shadow: 0 0 10px 1px black;
-  box-shadow: 0 0 10px 1px black;
+  -webkit-box-shadow: 0 0 10px 1px var(--color-black);
+  box-shadow: 0 0 10px 1px var(--color-black);
 }
 
 ul {
@@ -28,42 +49,53 @@ ul {
 }
 
 ::selection {
-  background-color: #d1d1d1;
+  background-color: var(--color-select-text);
 }
 
 mark {
-  background-color: #d1d1d1;
+  background-color: var(--color-select-text);
 }
 
 a,
 a:visited,
 a:hover { 
-  color: #000; 
+  color: var(--color-black); 
   text-decoration: none;
 }
 
-.section-title {
-  font-size: 36px;
-  margin: 0;
-  letter-spacing: 0px;
+.logo {
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
-.shadown-dark {
+.card {
+  background: var(--color-white);
+  border-radius: 20px;
+  padding: 30px;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
   box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
 }
 
-.padding-15 {
-  padding: 15px;
+.button {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  display: inline-block;
+  border-radius: 0px;
+  line-height: 1;
+  vertical-align: middle;
+  padding: 8px 20px;
+  width: 100px;
+  text-align: center;
+  font-weight: 400;  
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(87, 67, 96, 0.1);
+  box-shadow: 0px 5px 20px 0px rgba(87, 67, 96, 0.1);
 }
 
-.padding-30 {
-  padding: 30px;
+.button:hover {
+  background-color: var(--color-hover);
+  color: var(--color-white);
 }
 
-.rounded {
-  border-radius: 20px !important;
-}
 
 .item {
   min-height: 50px;
@@ -87,20 +119,15 @@ a:hover {
   cursor: pointer;
 }
 
-.btn-default {
-  background-color: #000;
-  color: #fff;
-  display: inline-block;
-  border-radius: 0px;
-  line-height: 1;
-  vertical-align: middle;
-  padding: 8px 20px;
-  /*     font-weight: 900; */
+.footer-social {
+  padding-left: 0;
+  list-style: none;
+  padding: 25px 0;
+  margin: 0;
+  text-align: center;
 }
 
-.btn-default:hover {
-  background-color: #000;
-  color: #fff;
-  -webkit-box-shadow: 0px 5px 20px 0px rgba(87, 67, 96, 0.1);
-          box-shadow: 0px 5px 20px 0px rgba(87, 67, 96, 0.1);
+.footer-social li {
+  display: inline-block;
+  margin-right: 0.5rem;
 }
