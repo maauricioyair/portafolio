@@ -1,0 +1,4 @@
+/* El archivo base.css inyectado por defecto de la integración */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
