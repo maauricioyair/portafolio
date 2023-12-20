@@ -1,4 +1,12 @@
 ---
+
+// Supports weights 100-900
+import '@fontsource-variable/dm-sans';
+// Supports weights 200-800
+import '@fontsource-variable/manrope';
+// Global styles
+import "../styles/globals.css";
+
 interface Props {
 	title: string;
 }
@@ -33,7 +41,6 @@ const { title } = Astro.props;
 		);
 	}
 	html {
-		font-family: system-ui, sans-serif;
 		background: #13151a;
 		background-size: 224px;
 	}
