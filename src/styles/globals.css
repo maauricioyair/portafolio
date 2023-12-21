@@ -3,6 +3,19 @@
 @tailwind components;
 @tailwind utilities;
 
+	:root {
+    --white: theme(colors.color-white);
+    --black: theme(colors.color-black);
+
+    --theme-light: theme(colors.theme-light);
+    --theme-dark: theme(colors.theme-dark);
+    
+		--accent: theme(colors.accent);
+		--accent-light: theme(colors.accent-light);
+		--accent-dark: theme(colors.accent-dark);	
+
+    --gradient: theme(colors.gradient);
+	}
 
 body {
   font-family: 'DM Sans Variable', system-ui, sans-serif;
@@ -11,4 +24,19 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Manrope Variable', system-ui, sans-serif;
+}
+
+
+@media (prefers-color-scheme: light) {
+	body {
+		background-color: var(--theme-light);
+		color: var(--black);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: var(--theme-dark);
+		color: var(--white);
+	}
 }
