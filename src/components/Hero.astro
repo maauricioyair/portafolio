@@ -1,0 +1,83 @@
+---
+import Avatar from '../components/Avatar.astro';
+---
+
+<div aria-label="hero section" class="hero py-[100px] px-0 relative z-0">
+  <div class="m-auto p-4 w-[800px] max-w-cal">
+    <Avatar title='🇲🇽'/>
+    <span class="text-xl block font-normal text-center mb-0 leading-5">Hola, soy Mauricio ✌🏻</span>
+    <h1 class="text-3xl md:text-6xl font-black text-center mb-5">Ingeniero de  <span class="text-gradient">software</span></h1>
+    <p class="my-7 mx-auto text-center max-w-full w-[50ch]">Busco una oportunidad como Desarrollador Full-Stack JavaScript, aprovechando mi sólida experiencia como Desarrollador Frontend. Destaco por mi enfoque organizado y mi curiosidad innata por entender el funcionamiento interno de las tecnologías. Estoy comprometido con el aprendizaje continuo y con aportar mi experiencia al desarrollo de proyectos innovadores.</p>
+    <div class="flex flex-wrap justify-center items-center gap-3 md:gap-5">
+      <a href="https://github.com/mauricioyair" class="flex flex-grow md:flex-grow-0 justify-center items-center gap-2 bg-white hover:bg-color-light-extra dark:bg-color-black-extra dark:hover:bg-hover-dark border-1 border-r border-t border-l border-b border-solid dark:border-border-dark outline-none font-medium text-base py-2 px-4 rounded">        
+        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-color-black-extra dark:stroke-color-light-extra" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+        </svg>
+        Github
+      </a>
+      <a href="https://www.linkedin.com/in/maauricioyair/" class="flex flex-grow md:flex-grow-0 justify-center items-center gap-2 bg-white hover:bg-color-light-extra dark:bg-color-black-extra dark:hover:bg-hover-dark border-1 border-r border-t border-l border-b border-solid dark:border-border-dark outline-none font-medium text-base py-2 px-4 rounded">               
+        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-color-black-extra dark:stroke-color-light-extra" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+          <path d="M8 11l0 5" />
+          <path d="M8 8l0 .01" />
+          <path d="M12 16l0 -5" />
+          <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+        </svg>
+        Linkedin
+      </a>
+      <button class="flex flex-grow md:flex-grow-0 justify-center items-center gap-2 bg-white hover:bg-color-light-extra dark:bg-color-black-extra dark:hover:bg-hover-dark border-1 border-r border-t border-l border-b border-solid dark:border-border-dark outline-none font-medium copy-board text-base py-2 px-4 rounded"> 
+        <svg xmlns="http://www.w3.org/2000/svg" id="iconCopy" class="stroke-color-black-extra dark:stroke-color-light-extra" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
+          <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
+        </svg>    
+        Copiar correo
+      </button> 
+    </div>
+  </div>
+</div>
+
+<style>
+
+
+	.text-gradient {
+		background-image: var(--gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+
+</style>
+
+<script>
+  const emailClip = "yairchavez555@gmail.com";
+  const copyBoard = document.querySelector('.copy-board');  
+  const cloneBoard = copyBoard.cloneNode(true);
+
+  document.addEventListener('keydown', function(e){
+    if(e.code === 'KeyC') {
+      navigator.clipboard.writeText(emailClip);
+    }
+  });
+
+  copyBoard.addEventListener('click', function(e){
+    navigator.clipboard.writeText(emailClip);    
+    copyBoard.innerHTML = `
+    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-color-black-extra dark:stroke-color-light-extra" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+      Copiado
+    `;
+    setTimeout(() => {
+      copyBoard.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" id="iconCopy" class="stroke-color-black-extra dark:stroke-color-light-extra" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
+          <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
+      </svg> 
+      ${cloneBoard.textContent}
+    `;      
+    }, 2000);    
+  });
+</script>
