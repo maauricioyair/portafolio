@@ -30,6 +30,7 @@
 
 # Portable Network Graphics
 *.png
+!screenshot.png
 
 # Animated Portable Network Graphics
 *.apng
