@@ -3,18 +3,26 @@ interface Props {
 	title: string;
 	body: string;
 	href: string;
+	tech: Array<string>;
 }
 
-const { href, title, body } = Astro.props;
+const { href, title, body, tech } = Astro.props;
 ---
 
-<li class="list-none flex p-[1px] bg-[#23262d] bg-none bg-[length:400%] rounded-[8px] bg-center shadow-inset transition-all duration-700 ease-in-out hover:bg-[0] hover:bg-linear-gradient  link-card">
-	<a href={href} class="w-full bg-[#1c1c1c] no-underline leading-6 p-6 rounded-[8px] opacity-80">
-		<h2 class="m-0 text-xl">
+<li aria-label="card item" class="list-none flex items-stretch p-[1px] border-1 border-r border-t border-l border-b border-solid bg-color-light-extra dark:border-border-dark dark:bg-color-black-extra dark:bg-none bg-[length:400%] rounded-2xl bg-center shadow-inset transition-all duration-700 ease-in-out hover:bg-[0] hover:bg-linear-gradient group">
+	<a href={href} class="w-full dark:bg-color-black-extra no-underline leading-6 p-6 rounded-2xl hover:opacity-80">
+		<h2 class="mb-2 text-xl font-semibold group-hover:text-white">
 			{title}			
 		</h2>
-		<p class="mt-2 mb-0">
+		<p class="mb-3 group-hover:text-white">
 			{body}
 		</p>
+		<div class="flex flex-wrap items-center gap-2">			
+			{
+				tech.map((item) => (
+				<span class="truncate border-1 border-r border-t border-l border-b border-solid group-hover:bg-transparent group-hover:text-white bg-color-light-extra dark:border-border-dark dark:bg-color-black-extra px-2 py-1 text-xs rounded">{item}</span>
+				))
+			}
+		</div>
 	</a>
 </li>
