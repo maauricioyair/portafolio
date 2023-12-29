@@ -8,7 +8,7 @@ const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
 ---
 
-<footer aria-label="Footer" class="flex items-center justify-center flex-none flex-row flex-nowrap gap-5 min-h-min my-16">
+<footer aria-label="Footer" class="flex items-center justify-center flex-none md:flex-row flex-nowrap gap-3 md:gap-5 min-h-min my-16">
   <div class="flex flex-row items-center gap-2 group">
     <p>{i18n.FOOTER_COPY} </p>
     <svg xmlns="http://www.w3.org/2000/svg" class="stroke-color-black-extra dark:stroke-color-light-extra group-hover:fill-red-700 group-hover:stroke-red-700" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -18,7 +18,7 @@ const i18n = getI18N({ currentLocale })
   </div>
   <div class="border border-gray-950 dark:border-slate-100 border-l border-r border-solid aspect-square rounded-full opacity-4 overflow-hidden relative w-1 will-change-transform"></div>
   {
-    currentLocale === "en" ? <a href="/portafolio/">🇲🇽 Spanish</a> : <a href="/portafolio/en">🇺🇸 Inglés</a>
+    currentLocale === "en" ? <a href="/portafolio/"> &#127474;&#127485; Spanish</a> : <a href="/portafolio/en">&#127482;&#127480; Inglés</a>
   }
   <div class="border border-gray-950 dark:border-slate-100 border-l border-r border-solid aspect-square rounded-full opacity-4 overflow-hidden relative w-1 will-change-transform"></div>
   <div>
