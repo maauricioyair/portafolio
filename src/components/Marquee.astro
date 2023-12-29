@@ -12,83 +12,86 @@ import MyslIcon from '../images/MysqlIcon.astro'
 import NpmIcon from '../images/NpmIcon.astro'
 ---
 
-<article class="flex items-center my-10 overflow-x-hidden">
-  <div class="relative flex max-w-full overflow-hidden py-5 Marquees">
-    <div class="flex w-max animate-marquee [--duration:60s] hover:[animation-play-state:paused] cursor-no-drop">
-      
-      <div class="h-full px-2.5">
-        <div class="relative h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6 mt-auto flex items-center">   
+<article class="group flex items-start gap-4 my-10 py-5 Marquees">
+  <div class="flex items-center gap-4 max-w-full overflow-hidden select-none">
+    <ul class="flex items-start justify-around gap-4 shrink-0 min-w-full animate-marquee cursor-no-drop group-hover:[animation-play-state:paused]">
+      <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
           <ReactIcon />         
-        </div>
-      </div>
-
-      <div class="h-full px-2.5">
-        <div class="relative h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6 mt-auto flex items-center">   
+      </li>
+        <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
           <TailwindIcon />
-        </div>
-      </div>
-
-      <div class="h-full px-2.5">
-        <div class="relative h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6 mt-auto flex items-center">   
+      </li>
+        <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
           <BootstrapIcon />
-        </div>
-      </div>
-
-      <div class="h-full px-2.5">
-        <div class="relative h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6 mt-auto flex items-center">   
+      </li>
+        <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
           <WordpressIcon />
-        </div>
-      </div>
-
-      <div class="h-full px-2.5">
-        <div class="relative h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6 mt-auto flex items-center">   
+      </li>
+        <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
           <PhpIcon />               
-        </div>
-      </div>
-
-      <div class="h-full px-2.5">
-        <div class="relative h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6 mt-auto flex items-center">   
+      </li>
+        <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
           <FigmaIcon />
-        </div>
-      </div>
-
-      <div class="h-full px-2.5">
-        <div class="relative h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6 mt-auto flex items-center">   
+      </li>
+        <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
           <JavascriptIcon />
-        </div>
-      </div>
-
-      <div class="h-full px-2.5">
-        <div class="relative h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6 mt-auto flex items-center">   
+      </li>
+        <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
           <HtmlIcon />
-        </div>
-      </div>
-
-      <div class="h-full px-2.5">
-        <div class="relative h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6 mt-auto flex items-center">   
+      </li>
+        <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
           <CssIcon />
-        </div>
-      </div>
-
-      <div class="h-full px-2.5">
-        <div class="relative h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6 mt-auto flex items-center">   
+      </li>
+        <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
           <MyslIcon />
-        </div>
-      </div>
-
-      <div class="h-full px-2.5">
-        <div class="relative h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6 mt-auto flex items-center">   
+      </li>
+      <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
           <NpmIcon />
-        </div>
-      </div>
+      </li>
+    </ul>
 
-    </div>
+    <!-- Repeated Marquee -->
+    <ul class="flex items-start justify-around gap-4 shrink-0 min-w-full animate-marquee cursor-no-drop group-hover:[animation-play-state:paused]">
+      <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
+          <ReactIcon />         
+      </li>
+        <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
+          <TailwindIcon />
+      </li>
+        <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
+          <BootstrapIcon />
+      </li>
+        <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
+          <WordpressIcon />
+      </li>
+        <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
+          <PhpIcon />               
+      </li>
+        <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
+          <FigmaIcon />
+      </li>
+        <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
+          <JavascriptIcon />
+      </li>
+        <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
+          <HtmlIcon />
+      </li>
+        <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
+          <CssIcon />
+      </li>
+        <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
+          <MyslIcon />
+      </li>
+      <li class="h-full w-full rounded-2xl border bg-color-light-extra dark:bg-color-black-extra dark:border-border-dark px-8 py-6">   
+          <NpmIcon />
+      </li>
+    </ul>
   </div>
 </article>
+
 
 <style>
   .Marquees{ 
     mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%);
   }
 </style>
-
