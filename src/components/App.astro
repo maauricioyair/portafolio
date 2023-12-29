@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Card from '../components/Card.astro';
+import Marquee from '../components/Marquee.astro';
+import Footer from '../components/Footer.astro';
+
+//Internalization
+import { getI18N } from "../i18n/"
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+---
+
+<Layout title={i18n.SEO_TITLE} description={i18n.SEO_DESCRIPTION}>
+	<Hero />
+
+	<main class="-mt-16 relative z-10 m-auto p-4 w-[800px] max-w-cal">
+		<ul role="list" class="grid gap-5 p-0 md:grid-cols-2">
+			<Card
+				href="https://mauricioyair.github.io/To-do/"
+				title={i18n.PROJECTS.PROJECT_TITLE_1}
+				body={i18n.PROJECTS.PROJECT_DESCRIPTION_1},	
+				tech={["React"]}
+			/>
+			<Card
+				href="https://github.com/mauricioyair/Netflix-clone"
+				title={i18n.PROJECTS.PROJECT_TITLE_2}
+				body={i18n.PROJECTS.PROJECT_DESCRIPTION_2},	
+				tech={["React", "Tailwind"]}
+			/>
+			<Card
+				href="https://github.com/mauricioyair/Shop-Woocommerce-App"
+				title={i18n.PROJECTS.PROJECT_TITLE_3}
+				body={i18n.PROJECTS.PROJECT_DESCRIPTION_3},	
+				tech={["React Native", "WordPress"]}
+			/>
+			<Card
+				href="https://github.com/mauricioyair/CRUD-PHP-MYSQL"
+				title={i18n.PROJECTS.PROJECT_TITLE_4}
+				body={i18n.PROJECTS.PROJECT_DESCRIPTION_4},	
+				tech={["PHP", "MySQL"]}
+			/>
+		</ul>
+		<Marquee />	
+		<Footer />
+	</main>
+</Layout>

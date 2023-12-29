@@ -1,0 +1,21 @@
+{
+  "SEO_TITLE": "Portafolio de Mauricio - Ingeniero de Software",
+  "SEO_DESCRIPTION": "Ingeniero de Software con experiencia en desarrollo Web y más de 5 años. Desarrollando aplicaciones web con React y WordPress",
+  "NAME_HERO": "Hola, soy Mauricio ✌🏻",
+  "OCUPATION_HERO": "Ingeniero de",
+  "OCUPATION_HERO_2": "Software",
+  "DESCRIPTION_HERO": "Busco una oportunidad como <strong>Desarrollador Full-Stack JavaScript</strong>, aprovechando mi sólida experiencia como Desarrollador Frontend. Destaco por mi enfoque organizado y mi curiosidad innata por entender el funcionamiento interno de las tecnologías. Estoy comprometido con el aprendizaje continuo y con aportar mi experiencia al desarrollo de proyectos innovadores.",
+  "BUTTON_HERO_COPY_EMAIL": "Copiar correo",
+  "BUTTON_HERO_COPIED_EMAIL": "Copiado",
+  "FOOTER_COPY": "Hecho con",
+  "PROJECTS": {
+    "PROJECT_TITLE_1": "To-do",
+    "PROJECT_DESCRIPTION_1": "En esta app puedes agregar tareas, marcarlas como completadas y eliminarlas.",
+    "PROJECT_TITLE_2": "Clone de Netflix",
+    "PROJECT_DESCRIPTION_2": "Netflix clone se uso la api de rick and morty para mostrar los personajes.",
+    "PROJECT_TITLE_3": "Shop Woocommerce",
+    "PROJECT_DESCRIPTION_3": "App mobile que obtiene los productos de un sitio web de woocommerce.",
+    "PROJECT_TITLE_4": "CRUD",
+    "PROJECT_DESCRIPTION_4": "En esta app puedes crear, leer, actualizar y eliminar tareas y productos."
+  }
+}

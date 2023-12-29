@@ -1,13 +1,19 @@
 ---
 import Avatar from '../components/Avatar.astro';
+
+//Internalization
+import { getI18N } from "../i18n/"
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
 ---
 
 <div aria-label="hero section" class="hero py-[100px] px-0 relative z-0">
   <div class="m-auto p-4 w-[800px] max-w-cal">
-    <Avatar title='🇲🇽'/>
-    <span class="text-xl block font-normal text-center mb-0 leading-5">Hola, soy Mauricio ✌🏻</span>
-    <h1 class="text-3xl md:text-6xl font-black text-center mb-5">Ingeniero de  <span class="text-gradient">software</span></h1>
-    <p class="my-7 mx-auto text-center max-w-full w-[50ch]">Busco una oportunidad como Desarrollador Full-Stack JavaScript, aprovechando mi sólida experiencia como Desarrollador Frontend. Destaco por mi enfoque organizado y mi curiosidad innata por entender el funcionamiento interno de las tecnologías. Estoy comprometido con el aprendizaje continuo y con aportar mi experiencia al desarrollo de proyectos innovadores.</p>
+    <Avatar title="🇲🇽"/>
+    <span class="text-xl block font-normal text-center mb-0 leading-5">{i18n.NAME_HERO}</span>
+    <h1 class="text-3xl md:text-6xl font-black text-center mb-5">{i18n.OCUPATION_HERO} <span class="text-gradient">{i18n.OCUPATION_HERO_2}</span></h1>
+    <p class="my-7 mx-auto text-center max-w-full w-[50ch]" set:html={i18n.DESCRIPTION_HERO} />
     <div class="flex flex-wrap justify-center items-center gap-3 md:gap-5">
       <a href="https://github.com/mauricioyair" class="flex flex-grow md:flex-grow-0 justify-center items-center gap-2 bg-white hover:bg-color-light-extra dark:bg-color-black-extra dark:hover:bg-hover-dark border-1 border-r border-t border-l border-b border-solid dark:border-border-dark outline-none font-medium text-base py-2 px-4 rounded">        
         <svg xmlns="http://www.w3.org/2000/svg" class="stroke-color-black-extra dark:stroke-color-light-extra" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -27,21 +33,25 @@ import Avatar from '../components/Avatar.astro';
         </svg>
         Linkedin
       </a>
-      <button class="flex flex-grow md:flex-grow-0 justify-center items-center gap-2 bg-white hover:bg-color-light-extra dark:bg-color-black-extra dark:hover:bg-hover-dark border-1 border-r border-t border-l border-b border-solid dark:border-border-dark outline-none font-medium copy-board text-base py-2 px-4 rounded"> 
-        <svg xmlns="http://www.w3.org/2000/svg" id="iconCopy" class="stroke-color-black-extra dark:stroke-color-light-extra" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-          <path d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
-          <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
-        </svg>    
-        Copiar correo
+      <button class=" bg-white hover:bg-color-light-extra dark:bg-color-black-extra dark:hover:bg-hover-dark border-1 border-r border-t border-l border-b border-solid dark:border-border-dark outline-none font-medium copy-board text-base py-2 px-4 rounded">           
+        <span class="flex flex-grow md:flex-grow-0 justify-center items-center gap-2 copy-text">
+          <svg xmlns="http://www.w3.org/2000/svg" id="iconCopy" class="stroke-color-black-extra dark:stroke-color-light-extra" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
+            <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
+          </svg>  
+          {i18n.BUTTON_HERO_COPY_EMAIL}
+        </span>
+        <span class="hidden copied-text">
+          <svg xmlns="http://www.w3.org/2000/svg" class="stroke-color-black-extra dark:stroke-color-light-extra" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
+          {i18n.BUTTON_HERO_COPIED_EMAIL}
+        </span>
       </button> 
     </div>
   </div>
 </div>
 
 <style>
-
-
 	.text-gradient {
 		background-image: var(--gradient);
 		-webkit-background-clip: text;
@@ -54,8 +64,9 @@ import Avatar from '../components/Avatar.astro';
 
 <script>
   const emailClip = "yairchavez555@gmail.com";
-  const copyBoard = document.querySelector('.copy-board');  
-  const cloneBoard = copyBoard.cloneNode(true);
+  const copyBoard = document.querySelector('.copy-board');
+  const textCopy = document.querySelector('.copy-text');
+  const textCopied = document.querySelector('.copied-text');
 
   document.addEventListener('keydown', function(e){
     if(e.code === 'KeyC') {
@@ -63,21 +74,14 @@ import Avatar from '../components/Avatar.astro';
     }
   });
 
-  copyBoard.addEventListener('click', function(e){
-    navigator.clipboard.writeText(emailClip);    
-    copyBoard.innerHTML = `
-    <svg xmlns="http://www.w3.org/2000/svg" class="stroke-color-black-extra dark:stroke-color-light-extra" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-      Copiado
-    `;
+  copyBoard.addEventListener('click', function(){
+    navigator.clipboard.writeText(emailClip);
+    textCopy.classList.add('hidden');  
+    textCopied.classList.remove('hidden');
+    textCopied.classList.add('flex', 'flex-grow', 'md:flex-grow-0', 'justify-center', 'items-center', 'gap-2');
     setTimeout(() => {
-      copyBoard.innerHTML = `
-      <svg xmlns="http://www.w3.org/2000/svg" id="iconCopy" class="stroke-color-black-extra dark:stroke-color-light-extra" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-          <path d="M8 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
-          <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
-      </svg> 
-      ${cloneBoard.textContent}
-    `;      
+      textCopy.classList.remove('hidden');  
+      textCopied.classList.add('hidden');      
     }, 2000);    
   });
 </script>

@@ -1,18 +1,28 @@
 ---
 const currentYear = () => new Date().getFullYear();
 
+//Internalization
+import { getI18N } from "../i18n/"
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
 ---
-<hr>
+
 <footer aria-label="Footer" class="flex items-center justify-center flex-none flex-row flex-nowrap gap-5 min-h-min my-16">
   <div class="flex flex-row items-center gap-2 group">
-    <p>Made with </p>
+    <p>{i18n.FOOTER_COPY} </p>
     <svg xmlns="http://www.w3.org/2000/svg" class="stroke-color-black-extra dark:stroke-color-light-extra group-hover:fill-red-700 group-hover:stroke-red-700" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
       <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
     </svg>
   </div>
   <div class="border border-gray-950 dark:border-slate-100 border-l border-r border-solid aspect-square rounded-full opacity-4 overflow-hidden relative w-1 will-change-transform"></div>
+  {
+    currentLocale === "en" ? <a href="/portafolio/">🇲🇽 Spanish</a> : <a href="/portafolio/en">🇺🇸 Inglés</a>
+  }
+  <div class="border border-gray-950 dark:border-slate-100 border-l border-r border-solid aspect-square rounded-full opacity-4 overflow-hidden relative w-1 will-change-transform"></div>
   <div>
     <p>&#169; {currentYear()}</p>
   </div>
+  
 </footer>
