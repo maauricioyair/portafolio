@@ -45,6 +45,7 @@
 # Scalable Vector Graphics
 *.svg
 *.svgz
+!favicon.svg
 
 # Portable Document Format
 *.pdf
