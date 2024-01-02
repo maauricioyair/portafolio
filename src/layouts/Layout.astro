@@ -14,6 +14,7 @@ interface Props {
 
 const { title, description } = Astro.props;
 const { currentLocale } = Astro
+const canonicalURL = new URL(Astro.url.pathname, Astro.site); 
 ---
 
 <!doctype html>
@@ -24,6 +25,25 @@ const { currentLocale } = Astro
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/portafolio/favicon.svg" />
 		<title>{title}</title>
+		<link rel="canonical" href={canonicalURL} />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:locale" content={currentLocale} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content="/portafolio/screenshot.png" />
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content="portafolio/screenshot.png" />
+		<meta name="twitter:image:alt" content={title} />
+		<meta name="twitter:site" content="@mauricioyair" />
+		<meta name="twitter:creator" content="@mauricioyair" />
+
 	</head>
 	<body>
 		<slot />
