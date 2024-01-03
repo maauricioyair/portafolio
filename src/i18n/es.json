@@ -8,6 +8,11 @@
   "BUTTON_HERO_COPY_EMAIL": "Copiar correo",
   "BUTTON_HERO_COPIED_EMAIL": "Copiado",
   "FOOTER_COPY": "Hecho con",
+  "HEADER" :{
+    "ABOUT": "Sobre mí",
+    "PROJECTS": "Proyectos",    
+    "TOOLS": "Herramientas"
+  },
   "PROJECTS": {
     "PROJECT_TITLE_1": "To-do",
     "PROJECT_DESCRIPTION_1": "En esta app puedes agregar tareas, marcarlas como completadas y eliminarlas.",

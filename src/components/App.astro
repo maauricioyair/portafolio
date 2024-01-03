@@ -4,6 +4,7 @@ import Hero from '../components/Hero.astro';
 import Card from '../components/Card.astro';
 import Marquee from '../components/Marquee.astro';
 import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 
 //Internalization
 import { getI18N } from "../i18n/"
@@ -13,10 +14,11 @@ const i18n = getI18N({ currentLocale })
 ---
 
 <Layout title={i18n.SEO_TITLE} description={i18n.SEO_DESCRIPTION}>
+	<Header />
 	<Hero />
 
 	<main class="-mt-16 relative z-10 m-auto p-4 w-[800px] max-w-cal">
-		<ul role="list" class="grid gap-5 p-0 md:grid-cols-2">
+		<ul role="list" class="grid gap-5 p-0 md:grid-cols-2 mb-16" id="proyectos">
 			<Card
 				href="https://mauricioyair.github.io/To-do/"
 				title={i18n.PROJECTS.PROJECT_TITLE_1}

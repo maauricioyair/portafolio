@@ -3,16 +3,26 @@
 @tailwind components;
 @tailwind utilities;
 
-	:root {
-    --theme-light: theme(colors.theme-light);
-    --theme-dark: theme(colors.theme-dark);
-    
-		--accent: theme(colors.accent);
-		--accent-light: theme(colors.accent-light);
-		--accent-dark: theme(colors.accent-dark);	
+:root {
+	--theme-light: theme(colors.theme-light);
+	--theme-dark: theme(colors.theme-dark);
+	
+	--accent: theme(colors.accent);
+	--accent-light: theme(colors.accent-light);
+	--accent-dark: theme(colors.accent-dark);	
 
-    --gradient: theme(colors.gradient);
+	--gradient: theme(colors.gradient);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
 	}
+}
 
 body {
   font-family: 'DM Sans Variable', system-ui, sans-serif;

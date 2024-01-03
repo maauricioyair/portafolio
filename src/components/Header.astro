@@ -1,0 +1,39 @@
+---
+//Internalization
+import { getI18N } from "../i18n/"
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+---
+
+<header
+class={`
+  flex justify-center items-center
+  mx-auto
+  py-5
+  fixed top-0
+  w-full
+  z-50
+`}
+>
+<nav
+  class={`
+    border dark:border-border-dark rounded-full
+    px-3 py-1
+    flex flex-row items-center
+    bg-color-light-extra/50 dark:bg-color-black-extra/50
+    backdrop-blur-2xl
+  `}
+>
+  <a class="hover:bg-color-light-extra dark:hover:bg-hover-dark rounded-full px-3 transition" href="#sobre-mi"
+  >{i18n.HEADER.ABOUT}</a
+  >
+  <a class="hover:bg-color-light-extra dark:hover:bg-hover-dark rounded-full px-3 transition" href="#proyectos"
+    >{i18n.HEADER.PROJECTS}</a
+  >
+  <a
+    class="hover:bg-color-light-extra dark:hover:bg-hover-dark rounded-full px-3 transition"
+    href="#herramientas">{i18n.HEADER.TOOLS}</a
+  >   
+</nav>
+</header>
