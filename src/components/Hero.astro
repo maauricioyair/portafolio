@@ -10,7 +10,7 @@ const i18n = getI18N({ currentLocale })
 
 <div aria-label="hero section" class="hero py-[100px] px-0 relative z-0" id="sobre-mi">
   <div class="m-auto p-4 w-[800px] max-w-cal">
-    <Avatar title="&#127474;&#127485;"/>
+    <Avatar title={i18n.STATUS_HERO_AVAILABLE}/>
     <span class="text-xl block font-normal text-center mb-0 leading-5">{i18n.NAME_HERO}</span>
     <h1 class="text-3xl md:text-6xl font-black text-center mb-5">{i18n.OCUPATION_HERO} <span class="text-gradient">{i18n.OCUPATION_HERO_2}</span></h1>
     <p class="my-7 mx-auto text-center max-w-full w-[50ch]" set:html={i18n.DESCRIPTION_HERO} />

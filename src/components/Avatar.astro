@@ -5,14 +5,13 @@ interface Props {
 
 const { title } = Astro.props;
 ---
-
-<div class="relative top-0 w-fit left-1/2 -translate-x-1/2 mb-8">
-  <svg class="w-full" xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108">
+<div class="w-full flex flex-col items-center justify-center mb-10">
+  <svg class="w-full" xmlns="http://www.w3.org/2000/svg" width="180" height="120" viewBox="0 0 108 108">
     <g id="hero" transform="translate(-811 -274)">
       <g id="Grupo_3" data-name="Grupo 3" transform="translate(290)">
         <g id="bio" transform="translate(470 274)">
           <g id="avatar" transform="translate(51)">
-            <circle id="Oval" cx="54" cy="54" r="54" class="fill-hover-dark dark:fill-hover-light"/>
+            <circle id="Oval" cx="54" cy="54" r="54" class="fill-color-thirty-light dark:fill-color-thirty-dark"/>
             <g id="Grupo_2" data-name="Grupo 2">
               <g id="Grupo_1" data-name="Grupo 1" transform="translate(20 17)">
                 <path id="Fill-31" d="M55.636,80.753C43.853,75.852,39.973,69.763,40.979,61H28.021c1.006,8.763-2.874,14.852-14.657,19.753S0,91,0,91H69s-1.581-5.346-13.364-10.247" fill-rule="evenodd" class="fill-accent-dark dark:fill-accent-light"/>
@@ -48,5 +47,9 @@ const { title } = Astro.props;
       <path id="Trazado_3" data-name="Trazado 3" d="M207.619,59.017l1.393-1.805,2.9-1.444" transform="translate(-145 -0.116)" fill="none" stroke="#000" stroke-width="1"/>
     </g>
   </svg>
-  <span class="hidden absolute right-0 -bottom-3 bg-accent p-0 rounded-full leading-none w-9 h-9 md:flex justify-center items-center">{title}</span>
+  <div class="flex w-full flex-row items-center justify-center">
+    <span class="animate-border inline-block rounded-full bg-white bg-gradient-to-r from-accent via-accent-dark to-accent-light bg-[length:400%_400%] p-[1px]">
+      <span class="block rounded-full bg-color-light-extra/50 dark:bg-color-black-extra/50 p-2 font-bold text-xs leading-none">{title}</span>
+    </span>
+  </div>
 </div>

@@ -1,6 +1,8 @@
 {
   "SEO_TITLE": "Mauricio's Portfolio - Software Engineer",
   "SEO_DESCRIPTION": "Software Engineer with experience in Web Development",
+  "STATUS_HERO_AVAILABLE": "Available for work",
+  "STATUS_HERO_UNAVAILABLE": "Unavailable for work",
   "NAME_HERO": "Hi, I'm Mauricio ✌🏻",
   "OCUPATION_HERO": "Software",
   "OCUPATION_HERO_2": "Engineer",

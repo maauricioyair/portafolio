@@ -14,7 +14,9 @@ module.exports = {
         'border-light': 'rgb(222, 222, 222)',
         'hover-light': 'rgb(225, 255, 255)',
         'border-dark': 'rgb(40, 40, 40)',
-        'hover-dark': 'rgba(38, 38, 38, 0.88)',              
+        'hover-dark': 'rgba(38, 38, 38, 0.88)',
+        'color-thirty-light': 'rgb(22, 12, 47)',
+        'color-thirty-dark': 'rgb(22, 40, 0)',
         'gradient': 'linear-gradient(45deg, var(--accent), var(--accent-light) 30%, white 60%)',
       },
       boxShadow: {
@@ -28,12 +30,17 @@ module.exports = {
       },
       animation: {
         marquee: 'marquee 30s linear infinite',
+        border: 'border 4s ease infinite',
       },
       keyframes: {
         marquee: {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
-        }        
+        },
+        border: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        },
       },
     },
   },
