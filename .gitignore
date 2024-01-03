@@ -31,6 +31,8 @@
 # Portable Network Graphics
 *.png
 !screenshot.png
+!flag-eeuu.png
+!flag-mx.png
 
 # Animated Portable Network Graphics
 *.apng
