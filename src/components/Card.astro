@@ -3,17 +3,27 @@ interface Props {
 	title: string;
 	body: string;
 	href: string;
+	status: string;
 	tech: Array<string>;
 }
 
-const { href, title, body, tech } = Astro.props;
+const { href, title, body, tech, status } = Astro.props;
+
+//Internalization
+import { getI18N } from "../i18n/"
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
 ---
 
 <li aria-label="card item" class="list-none flex items-stretch p-[1px] border-1 border-r border-t border-l border-b border-solid bg-color-light-extra dark:border-border-dark dark:bg-color-black-extra dark:bg-none bg-[length:400%] rounded-2xl bg-center shadow-inset transition-all duration-700 ease-in-out hover:bg-[0] hover:bg-linear-gradient group">
-	<a href={href} class="w-full dark:bg-color-black-extra no-underline leading-6 p-6 rounded-2xl hover:opacity-80">
-		<h2 class="mb-2 text-xl font-semibold group-hover:text-white">
-			{title}			
-		</h2>
+	<a href={href} target="_blank" rel="noreferrer" class="w-full dark:bg-color-black-extra no-underline leading-6 p-6 rounded-2xl hover:opacity-80">
+		<div class="flex justify-between">
+			<h2 class="mb-2 text-xl font-semibold group-hover:text-white">
+				{title}			
+			</h2>
+			<span class="text-[10px] leading-none">{status}</span>
+		</div>
 		<p class="mb-3 group-hover:text-white">
 			{body}
 		</p>

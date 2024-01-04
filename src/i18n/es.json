@@ -6,7 +6,7 @@
   "NAME_HERO": "Hola, soy Mauricio ✌🏻",
   "OCUPATION_HERO": "Ingeniero en",
   "OCUPATION_HERO_2": "Software",
-  "DESCRIPTION_HERO": "Desarrollador Web con una trayectoria de 5 años de experiencia en WordPress y actualmente en JavaScript mi objetivo en el futuro es seguir aprendiendo nuevas tecnologías y desarrollar aplicaciones innovadoras.",
+  "DESCRIPTION_HERO": "Desarrollador web con una trayectoria de 5 años de experiencia en WordPress y actualmente en JavaScript en donde he trabajado en más de 30 proyectos de diferentes sectores. Mi objetivo en el futuro es seguir aprendiendo nuevas tecnologías y desarrollar aplicaciones innovadoras.",
   "BUTTON_HERO_COPY_EMAIL": "Copiar correo",
   "BUTTON_HERO_COPIED_EMAIL": "Copiado",
   "FOOTER_COPY": "Hecho con",
@@ -17,12 +17,28 @@
   },
   "PROJECTS": {
     "PROJECT_TITLE_1": "To-do",
+    "PROJECT_STATUS_1": "Personal",
     "PROJECT_DESCRIPTION_1": "En esta app puedes agregar tareas, marcarlas como completadas y eliminarlas.",
     "PROJECT_TITLE_2": "Clone de Netflix",
+    "PROJECT_STATUS_2": "Personal",
     "PROJECT_DESCRIPTION_2": "Netflix clone se uso la api de rick and morty para mostrar los personajes.",
     "PROJECT_TITLE_3": "Shop Woocommerce",
+    "PROJECT_STATUS_3": "Personal",
     "PROJECT_DESCRIPTION_3": "App mobile que obtiene los productos de un sitio web de woocommerce.",
     "PROJECT_TITLE_4": "CRUD",
-    "PROJECT_DESCRIPTION_4": "En esta app puedes crear, leer, actualizar y eliminar tareas y productos."
+    "PROJECT_STATUS_4": "Personal",
+    "PROJECT_DESCRIPTION_4": "En esta app puedes crear, leer, actualizar y eliminar tareas y productos.",
+    "PROJECT_TITLE_5": "Kerrylatam",
+    "PROJECT_STATUS_5": "Trabajo",
+    "PROJECT_DESCRIPTION_5": "Pagina informativa de productos de sabores.",
+    "PROJECT_TITLE_6": "Yosoyluzzz",
+    "PROJECT_STATUS_6": "Trabajo",
+    "PROJECT_DESCRIPTION_6": "Pagina de venta de cursos y terapias espirituales.",
+    "PROJECT_TITLE_7": "Grupo Franco",
+    "PROJECT_STATUS_7": "Trabajo",
+    "PROJECT_DESCRIPTION_7": "Pagina informativa para tres marcas de restaurantes.",
+    "PROJECT_TITLE_8": "GTI Trailers",
+    "PROJECT_STATUS_8": "Freelance",
+    "PROJECT_DESCRIPTION_8": "Pagina de servicios para el sector industrial automotriz y de transporte."
   }
 }
