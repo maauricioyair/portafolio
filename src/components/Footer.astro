@@ -1,4 +1,7 @@
 ---
+import FlagMX from '../assets/flag-mx.png';
+import FlagEEUU from '../assets/flag-eeuu.png'
+
 const currentYear = () => new Date().getFullYear();
 
 //Internalization
@@ -20,17 +23,17 @@ const i18n = getI18N({ currentLocale })
   {
     currentLocale === "en" ? 
     <a href="/portafolio/" class="flex gap-1 items-center justify-center"> 
-      <img src="/portafolio/flag-mx.png" alt="méxico" class="h-4 w-4">       
+      <img src={FlagMX.src} alt="méxico" class="h-4 w-4">       
       Spanish
       </a> : 
       <a href="/portafolio/en" class="flex gap-1 items-center justify-center">
-        <img src="/portafolio/flag-eeuu.png" alt="eeuu" class="h-4 w-4"> 
+        <img src={FlagEEUU.src} alt="eeuu" class="h-4 w-4"> 
         Inglés
       </a>
   }
   <div class="border border-gray-950 dark:border-slate-100 border-l border-r border-solid aspect-square rounded-full opacity-4 overflow-hidden relative w-1 will-change-transform"></div>
   <div>
-    <p>&#169; {currentYear()}</p>
+    <p>{currentYear()}</p>
   </div>
   
 </footer>

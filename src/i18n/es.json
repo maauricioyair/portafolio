@@ -28,17 +28,8 @@
     "PROJECT_TITLE_4": "CRUD",
     "PROJECT_STATUS_4": "Personal",
     "PROJECT_DESCRIPTION_4": "En esta app puedes crear, leer, actualizar y eliminar tareas y productos.",
-    "PROJECT_TITLE_5": "Kerrylatam",
-    "PROJECT_STATUS_5": "Trabajo",
-    "PROJECT_DESCRIPTION_5": "Pagina informativa de productos de sabores.",
-    "PROJECT_TITLE_6": "Yosoyluzzz",
-    "PROJECT_STATUS_6": "Trabajo",
-    "PROJECT_DESCRIPTION_6": "Pagina de venta de cursos y terapias espirituales.",
-    "PROJECT_TITLE_7": "Grupo Franco",
-    "PROJECT_STATUS_7": "Trabajo",
-    "PROJECT_DESCRIPTION_7": "Pagina informativa para tres marcas de restaurantes.",
-    "PROJECT_TITLE_8": "GTI Trailers",
-    "PROJECT_STATUS_8": "Freelance",
-    "PROJECT_DESCRIPTION_8": "Pagina de servicios para el sector industrial automotriz y de transporte."
+    "PROJECT_TITLE_5": "GTI Trailers",
+    "PROJECT_STATUS_5": "Freelance",
+    "PROJECT_DESCRIPTION_5": "Pagina de servicios para el sector industrial automotriz y de transporte."
   }
 }
