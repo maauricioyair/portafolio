@@ -9,6 +9,7 @@
   "DESCRIPTION_HERO": "5 years of experience as a Web Developer specialized in the FrontEnd. My goal in the future is tobe <strong>FullStack in JavaScript.</strong>",
   "BUTTON_HERO_COPY_EMAIL": "Copy e-mail",
   "BUTTON_HERO_COPIED_EMAIL": "Done",
+  "LINK_CV": "See Curriculum Vitae",
   "FOOTER_COPY": "Made with",
   "HEADER" :{
     "ABOUT": "About me",
@@ -30,6 +31,9 @@
     "PROJECT_DESCRIPTION_4": "In this app you can create, read, update and delete tasks and products.",
     "PROJECT_TITLE_5": "GTI Trailers",
     "PROJECT_STATUS_5": "Freelance",
-    "PROJECT_DESCRIPTION_5": "Service page for the automotive and transportation industry."
+    "PROJECT_DESCRIPTION_5": "Service page for the automotive and transportation industry.",
+    "PROJECT_TITLE_6": "Raesal",
+    "PROJECT_STATUS_6": "Freelance",
+    "PROJECT_DESCRIPTION_6": "Generators page emergency power plants"
   }
 }

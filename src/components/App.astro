@@ -6,6 +6,7 @@ import Marquee from '@components/Marquee.astro';
 import Footer from '@components/Footer.astro';
 import Header from '@components/Header.astro';
 import ImageGTI from '@assets/screenshot-gti.png';
+import ImageRAESAL from '@assets/screenshot-raesal.png'
 
 //Internalization
 import { getI18N } from "../i18n/"
@@ -59,6 +60,14 @@ const i18n = getI18N({ currentLocale })
 				status={i18n.PROJECTS.PROJECT_STATUS_5},
 				image={ImageGTI.src},	
 				tech={["WordPress", "Elementor","PHP", "MySQL"]}
+			/>
+			<Card
+				href="https://raesal.com.mx"
+				title={i18n.PROJECTS.PROJECT_TITLE_6}
+				body={i18n.PROJECTS.PROJECT_DESCRIPTION_6},
+				status={i18n.PROJECTS.PROJECT_STATUS_6},
+				image={ImageRAESAL.src},	
+				tech={["Astro", "React", "Tailwind CSS"]}
 			/>
 		</ul>
 		<Marquee />	

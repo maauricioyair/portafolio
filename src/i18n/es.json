@@ -9,6 +9,7 @@
   "DESCRIPTION_HERO": "5 años de experiencia en el Desarrollador web especializado en el FrontEnd. Mi objetivo en el futuro es ser <strong>FullStack en JavaScript.</strong>",
   "BUTTON_HERO_COPY_EMAIL": "Copiar correo",
   "BUTTON_HERO_COPIED_EMAIL": "Copiado",
+  "LINK_CV": "Ver Curriculum Vitae",
   "FOOTER_COPY": "Hecho con",
   "HEADER" :{
     "ABOUT": "Sobre mí",
@@ -30,6 +31,9 @@
     "PROJECT_DESCRIPTION_4": "En esta app puedes crear, leer, actualizar y eliminar tareas y productos.",
     "PROJECT_TITLE_5": "GTI Trailers",
     "PROJECT_STATUS_5": "Freelance",
-    "PROJECT_DESCRIPTION_5": "Pagina de servicios para el sector industrial automotriz y de transporte."
+    "PROJECT_DESCRIPTION_5": "Página de servicios para el sector industrial automotriz y de transporte.",
+    "PROJECT_TITLE_6": "Raesal",
+    "PROJECT_STATUS_6": "Freelance",
+    "PROJECT_DESCRIPTION_6": "Página de generadores plantas de emergencia"
   }
 }
