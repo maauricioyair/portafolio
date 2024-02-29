@@ -6,15 +6,16 @@
   "NAME_HERO": "Hola, soy Mauricio ✌🏻",
   "OCUPATION_HERO": "Ingeniero en",
   "OCUPATION_HERO_2": "Software",
-  "DESCRIPTION_HERO": "5 años de experiencia en el Desarrollador web especializado en el FrontEnd. Mi objetivo en el futuro es ser <strong>FullStack en JavaScript.</strong>",
+  "DESCRIPTION_HERO": "+5 años de experiencia. Especializado en el <strong>desarrollo web.</strong>",
   "BUTTON_HERO_COPY_EMAIL": "Copiar correo",
   "BUTTON_HERO_COPIED_EMAIL": "Copiado",
-  "LINK_CV": "Ver Curriculum Vitae",
+  "LINK_CV": "Ver CV",
   "FOOTER_COPY": "Hecho con",
   "HEADER" :{
     "ABOUT": "Sobre mí",
     "PROJECTS": "Proyectos",    
-    "TOOLS": "Habilidades"
+    "TOOLS": "Habilidades",
+    "CONTACT": "Contacto"
   },
   "PROJECTS": {
     "PROJECT_TITLE_1": "To-do",
@@ -35,5 +36,6 @@
     "PROJECT_TITLE_6": "Raesal",
     "PROJECT_STATUS_6": "Freelance",
     "PROJECT_DESCRIPTION_6": "Página de generadores plantas de emergencia"
-  }
+  },
+  "ABOUT": "<p>Con 5 años de experiencia en el Desarrollo Web, inicie mi aventura con el CMS WordPress más usado en la web. Durante este tiempo, he participado activamente en diversos proyectos, desempeñando un papel importante en la creación de temas personalizados, plugins y optimización de sitios web, hasta su lanzamiento exitoso a producción.</p><p>Mi trayectoria profesional me ha permitido colaborar estrechamente con equipos multidisciplinarios, incluyendo diseñadores, desarrolladores y gerentes de proyectos. Este enfoque colaborativo ha enriquecido mi experiencia, proporcionándome una comprensión profunda de las dinámicas de trabajo en equipo y la importancia de la comunicación efectiva para lograr resultados sobresalientes.</p><p>Además, tengo una pasión por el aprendizaje continuo y la exploración de nuevas tecnologías. En mi tiempo libre, disfruto dedicar horas a estudiar y experimentar con las últimas herramientas y frameworks en el campo del Desarrollo Web. Esta curiosidad y compromiso con la mejora constante me han permitido mantenerme actualizado con las tendencias emergentes y adaptar mis habilidades a las demandas cambiantes del mercado.</p>"
 }

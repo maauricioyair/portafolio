@@ -6,15 +6,16 @@
   "NAME_HERO": "Hi, I'm Mauricio ✌🏻",
   "OCUPATION_HERO": "Software",
   "OCUPATION_HERO_2": "Engineer",
-  "DESCRIPTION_HERO": "5 years of experience as a Web Developer specialized in the FrontEnd. My goal in the future is tobe <strong>FullStack in JavaScript.</strong>",
+  "DESCRIPTION_HERO": "+5 years of experience. Specialized in <strong>web development.</strong>",
   "BUTTON_HERO_COPY_EMAIL": "Copy e-mail",
   "BUTTON_HERO_COPIED_EMAIL": "Done",
-  "LINK_CV": "See Curriculum Vitae",
+  "LINK_CV": "See CV",
   "FOOTER_COPY": "Made with",
   "HEADER" :{
     "ABOUT": "About me",
     "PROJECTS": "Projects",    
-    "TOOLS": "Stack"
+    "TOOLS": "Stack",
+    "CONTACT": "Contact"
   },
   "PROJECTS": {
     "PROJECT_TITLE_1": "To-do",
@@ -35,5 +36,6 @@
     "PROJECT_TITLE_6": "Raesal",
     "PROJECT_STATUS_6": "Freelance",
     "PROJECT_DESCRIPTION_6": "Generators page emergency power plants"
-  }
+  },
+  "ABOUT": "<p>With 5 years of experience in Web Development, I started my adventure with the most used WordPress CMS on the web. During this time, I have actively participated in various projects, playing an important role in the creation of custom themes, plugins and optimization of websites, until their successful launch into production.</p><p>My professional background has allowed me to collaborate closely with multidisciplinary teams, including designers, developers and project managers. This collaborative approach has enriched my experience, giving me a deep understanding of teamwork dynamics and the importance of effective communication to achieve outstanding results.</p><p>In addition, I have a passion for continuous learning and exploring new technologies. In my free time, I enjoy spending hours studying and experimenting with the latest tools and frameworks in the Web Development field. This curiosity and commitment to constant improvement has allowed me to keep up to date with emerging trends and adapt my skills to the changing demands of the market.</p>"
 }
