@@ -8,6 +8,7 @@ import Footer from '@components/Footer.astro';
 import Header from '@components/Header.astro';
 import ImageGTI from '@assets/screenshot-gti.png';
 import ImageRAESAL from '@assets/screenshot-raesal.png'
+import ImageTPX from '@assets/screenshot-tpx.png'
 
 //Internalization
 import { getI18N } from "../i18n/"
@@ -49,15 +50,7 @@ const i18n = getI18N({ currentLocale })
 					status={i18n.PROJECTS.PROJECT_STATUS_3},
 					image="https://github.com/mauricioyair/Shop-Woocommerce-App/blob/main/assets/screenshot.png?raw=true",	
 					tech={["React Native", "WordPress"]}
-				/>
-				<Card
-					href="https://github.com/mauricioyair/CRUD-PHP-MYSQL"
-					title={i18n.PROJECTS.PROJECT_TITLE_4}
-					body={i18n.PROJECTS.PROJECT_DESCRIPTION_4},
-					status={i18n.PROJECTS.PROJECT_STATUS_4},
-					image="",
-					tech={["PHP", "MySQL"]}
-				/>		
+				/>						
 				<Card
 					href="http://gtitrailers.com"
 					title={i18n.PROJECTS.PROJECT_TITLE_5}
@@ -65,6 +58,14 @@ const i18n = getI18N({ currentLocale })
 					status={i18n.PROJECTS.PROJECT_STATUS_5},
 					image={ImageGTI.src},	
 					tech={["WordPress", "Elementor","PHP", "MySQL"]}
+				/>
+				<Card
+					href="https://tpx.mx"
+					title={i18n.PROJECTS.PROJECT_TITLE_4}
+					body={i18n.PROJECTS.PROJECT_DESCRIPTION_4},
+					status={i18n.PROJECTS.PROJECT_STATUS_4},
+					image={ImageTPX.src},
+					tech={["HTML", "Tailwind", "WordPress"]}
 				/>
 				<Card
 					href="https://raesal.com.mx"
