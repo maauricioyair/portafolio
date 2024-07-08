@@ -1,54 +1,315 @@
 {
-  "SEO_TITLE": "Mauricio's Portfolio - Software Engineer",
-  "SEO_DESCRIPTION": "Software Engineer with experience in Web Development",
-  "STATUS_HERO_AVAILABLE": "Available for work",
-  "STATUS_HERO_UNAVAILABLE": "Unavailable for work",
-  "NAME_HERO": "Hi, I'm Mauricio ✌🏻",
-  "OCUPATION_HERO": "Software",
-  "OCUPATION_HERO_2": "Engineer",
-  "DESCRIPTION_HERO": "Specialized in <strong>web development.</strong>",
-  "BUTTON_HERO_COPY_EMAIL": "Copy e-mail",
-  "BUTTON_HERO_COPIED_EMAIL": "Done",
-  "LINK_CV": "See CV",
-  "FOOTER_COPY": "Made with",
-  "HEADER" :{
-    "ABOUT": "About me",
-    "PROJECTS": "Projects",    
-    "TOOLS": "Stack",
-    "CONTACT": "Contact"
+  "seo": {
+    "homepage": {
+      "title": "Mauricio's Portfolio - Software Engineer",
+      "description": "My portfolio in English"
+    },
+    "cvpage": {
+      "title": "Mauricio's Curriculum Vitae - Software Engineer",
+      "description": "My Curriculum Vitae in English"
+    }
+  },  
+  "basics": {
+    "name": "Mauricio Yair Chávez Fuentes",
+    "label": "Software Engineer",    
+    "image": "https://avatars.githubusercontent.com/u/35882034?v=4",
+    "email": "yairchavez555@gmail.com",
+    "phone": "4424652866",
+    "url": "https://mauricioyair.github.io/portafolio",
+    "summary": "I am actively looking for an opportunity as a Web Developer, taking advantage of my strong background. I stand out for my organized approach and my innate curiosity to understand the inner workings of technologies. I am committed to continuous learning and excited to contribute my experience to the development of innovative projects.",
+    "others": {
+      "name": "Hi, I'm Mauricio ✌🏻",
+      "ocupation_1": "Engineer",
+      "ocupation_2": "Software",
+      "description": "Specialized in <strong>web development.</strong>"
+    },
+    "status_available": "Available for work",
+    "status_unavailable": "Not available",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Querétaro",
+      "countryCode": "ES_MX",
+      "region": "México"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "maauricioyair",
+        "url": "https://mx.linkedin.com/in/maauricioyair"
+      },  
+      {
+        "network": "GitHub",
+        "username": "maauricioyair",
+        "url": "https://github.com/mauricioyair"
+      }
+    ]
   },
-  "DESCRIPCION_PROJECTS": "These are some of the projects in which I have worked as a freelance and personal projects that have helped me to practice new technologies.",
-  "PROJECTS": {
-    "PROJECT_TITLE_1": "To-do",
-    "PROJECT_STATUS_1": "Personal",
-    "PROJECT_DESCRIPTION_1": "App to add tasks, mark them as completed and delete them.",
-    "PROJECT_TITLE_2": "Noticias de Querétaro",
-    "PROJECT_STATUS_2": "Work",
-    "PROJECT_DESCRIPTION_2": "Real-time media page.",
-    "PROJECT_TITLE_3": "Japi.af",
-    "PROJECT_STATUS_3": "Work",
-    "PROJECT_DESCRIPTION_3": "Cosmetics and personal care E-commerce site",
-    "PROJECT_TITLE_4": "Grupo Franco",
-    "PROJECT_STATUS_4": "Work",
-    "PROJECT_DESCRIPTION_4": "Page for three consumer goods restaurant brands",
-    "PROJECT_TITLE_5": "Kerry Latam",
-    "PROJECT_STATUS_5": "Work",
-    "PROJECT_DESCRIPTION_5": "Food and beverage products page",   
-    "PROJECT_TITLE_6": "Pastrana y García",
-    "PROJECT_STATUS_6": "Work",
-    "PROJECT_DESCRIPTION_6": "Contact page for law firm",   
-    "PROJECT_TITLE_7": "Yosoyluzzz",
-    "PROJECT_STATUS_7": "Work",
-    "PROJECT_DESCRIPTION_7": "Events, courses, and products booking page",
-    "PROJECT_TITLE_8": "GTI Trailers",
-    "PROJECT_STATUS_8": "Freelance",
-    "PROJECT_DESCRIPTION_8": "Service page for the automotive and transportation industry.",
-    "PROJECT_TITLE_9": "TPX",
-    "PROJECT_STATUS_9": "Freelance",
-    "PROJECT_DESCRIPTION_9": "Hacking and Cybersecurity Solutions Page",
-    "PROJECT_TITLE_10": "Raesal",
-    "PROJECT_STATUS_10": "Freelance",
-    "PROJECT_DESCRIPTION_10": "Generators page emergency power plants"
+  "work": [    
+    {
+      "name": "IW Innovation Workshop",
+      "position": "WordPress Developer",  
+      "badges": ["Hybrid"],
+      "url": "https://iw.digital",
+      "startDate": "2020-09-28",
+      "endDate": "2023-11-30",
+      "summary": [
+        "Implementation of websites and online stores in WooCommerce and Shopify",
+        "Multilingual page creation",
+        "Creation of themes and plug-ins to meet website requirements",
+        "Training and support for content creators and administrators to use WordPress effectively",
+        "Experience in deploying in shared server environments",
+        "Landing page development and e-mail structure",
+        "E-commerce payment gateway integrations",
+        "Ongoing maintenance and support of production sites",        
+        "Using GIT for version control"                     
+      ],
+      "achievements": "I contributed to improve user experience, optimize loading performance and come up with new innovative ideas.",        
+      "highlights": ["HTML5", "CSS3", "JavaScript", "jQuery","PHP", "MySQL", "WordPress" ,"Woocommerce" ,"Shopify"]
+    },
+    {
+      "name": "Mercadology",
+      "position": "Web Developer",      
+      "badges": ["On-site"],
+      "url": "https://mercadology.mx",
+      "startDate": "2019-03-01",
+      "endDate": "2020-06-01",
+      "summary": [
+        "Website development in WordPress CMS",
+        "Use of visual layout builders, Elementor, WP Backery, Gutenberg",
+        "Optimizing and configuring WordPress for performance, security and SEO",
+        "Traffic monitoring in Google Analytics and Google Search Console"
+      ],
+      "achievements": "I worked as a team to increase organic positioning.", 
+      "highlights": ["WordPress", "SEO", "Elementor"]
+    }    
+  ],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Politécnica de Santa Rosa Jáuregui (UPSRJ)",
+      "url": "https://upsrj.edu.mx",
+      "area": "Software Engineering",
+      "studyType": "University",
+      "startDate": "2016-01-02",
+      "endDate": "2019-08-01",
+      "score": "10",
+      "highlights": ["Java", "Codeigniter", "Android Studio", "Ionic", "MySQL", "Ubuntu"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Platzi",
+      "date": null,
+      "issuer": "Platzi",
+      "url": "https://platzi.com/p/maauricioyair"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "hardskills": [
+    {
+      "name": "HTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TypeScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Tailwind",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Bootstrap",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "React",
+      "level": "",
+      "keywords": []
+    },              
+    {
+      "name": "Figma",
+      "level": "",
+      "keywords": [
+        "UI", "UX"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PHP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "level": "",
+      "keywords": []
+    },    
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    }    
+  ],
+  "softskills": [
+    {
+      "name": "Attention to detail"     
+    },    
+    {
+      "name": "Self-taught"
+    },    
+    {
+      "name": "Teamwork"
+    },    
+    {
+      "name": "Troubleshooting"
+    },    
+    {
+      "name": "Continuous learning"
+    }    
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Basic technician"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Videogames",
+      "keywords": ["Halo"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [       
+    {
+      "name": "To-do",
+      "status": "Personal",
+      "isActive": true,
+      "description": " App to add tasks, mark them as completed and delete them",
+      "highlights": [""],
+      "url": "https://mauricioyair.github.io/To-do/",
+      "github": "",
+      "image": "https://github.com/mauricioyair/To-do/blob/main/public/to-do-sc.png?raw=true",
+      "skills": ["React", "CSS", "JavaScript"]
+    },   
+    {
+      "name": "Raesal",
+      "status": "Freelance",
+      "isActive": true,
+      "description": "Emergency power plant services page",
+      "highlights": [""],
+      "url": "https://raesal.com.mx",
+      "github": "",
+      "image": "/src/assets/screenshot-raesal.png",
+      "skills": ["Astro", "React", "Tailwind"]
+    },   
+    {
+      "name": "GTI Trailers",
+      "status": "Freelance",
+      "isActive": true,
+      "description": "Automotive and Transportation Industry Services Page",
+      "highlights": [""],
+      "url": "http://gtitrailers.com",
+      "github": "",
+      "image": "./src/assets/screenshot-gti.png",
+      "skills": ["WordPress", "Elementor", "PHP", "MySQL"]
+    },   
+    {
+      "name": "TPX",
+      "status": "Freelance",
+      "isActive": true,
+      "description": "Hacking and Cybersecurity Solutions Page",
+      "highlights": [""],
+      "url": "https://tpx.mx",
+      "github": "",
+      "image": "/src/assets/screenshot-tpx.png",
+      "skills": ["WordPress", "Tailwind", "HTML"]
+    }
+  ],
+  "about": {
+    "summary": "<p>A little bit about how I started working professionally: my adventure began with WordPress. Although working with this CMS requires knowledge of PHP and MySQL, it allowed me to work with backend and frontend code. Although I am passionate about the frontend, I do not rule out the fact of continuing to prepare myself in the backend and mobile. During this time, I have actively participated in several projects that <span style='display:inline-flex;' class='markUnderline'>I do not add here for confidentiality</span>, playing an important role in the creation of custom themes, plugins and optimization of websites, until their successful launch to production.</p><p>My professional background has allowed me to collaborate closely with multidisciplinary teams, including designers, developers, clients and project managers. This collaborative approach has enriched my experience, giving me a deep understanding of teamwork dynamics and the importance of effective communication to achieve outstanding results.</p><p class='markBracket'>In addition, I have a passion for continuous learning and exploring new technologies. In my free time, I enjoy spending hours studying and experimenting with the latest tools and frameworks such as React.js, MongoDB, Node.js and currently Astro.build. This curiosity and commitment to constant improvement has allowed me to keep up to date with new trends.</p>"
   },
-  "ABOUT": "<p>I started my adventure with WordPress. While working with WordPress requires knowledge of PHP and MySQL, you could say that I worked as a Full Stack Jr. But my main focus is the Front-end in JavaScript. But I don't rule out further training on the Back-end. During this time, I have actively participated in various projects, playing an important role in the creation of custom themes, plugins and optimization of websites, until their successful launch to production.</p><p>My professional background has allowed me to collaborate closely with multidisciplinary teams, including designers, developers, clients and project managers. This collaborative approach has enriched my experience, giving me a deep understanding of teamwork dynamics and the importance of effective communication to achieve outstanding results.</p><p>In addition, I have a passion for continuous learning and exploring new technologies. In my free time, I enjoy spending hours studying and experimenting with the latest tools and frameworks in the Web Development field. This curiosity and commitment to constant improvement has allowed me to keep up to date with new trends.</p>"
+  "labels": {
+    "label_description_projects": "These are some of the projects I have worked on as a freelancer and personal projects.",
+    "label_experience": "Work experience",
+    "label_education": "Education",
+    "label_language": "Languages",
+    "label_soft_skills": "Soft Skills",
+    "label_certificacion": "Certificates"
+  },
+  "links": {
+    "button_hero_copy_email": "Copy e-mail",
+    "button_hero_copied_email": "Email copied",
+    "button_link_cv": "See CV"
+  },
+  "header" :{
+    "about": "About me",
+    "projects": "Projects",    
+    "tools": "Stack",
+    "blog": "Blog"
+  },
+  "footer": {
+    "copyright": "Made with"    
+  },
+  "page_error": {
+    "title": "Page not found",
+    "button_home": "Go Back Home"
+  }
 }
