@@ -2,9 +2,6 @@
 
 This project was created with Astro and Tailwind CSS.
 
-<img src="./public/screenshot.png" alt="screenshot">
-
-
 ## Built With 🚀
 
 ![Static Badge](https://img.shields.io/badge/4.0.7-black?style=flat&logo=astro&label=ASTRO)
