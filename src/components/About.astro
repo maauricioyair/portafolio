@@ -8,11 +8,21 @@ const i18n = getI18N({ currentLocale })
 
 <section id="sobre-mi" data-section="sobre-mi" class="scroll-m-20">  
   <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-8">     
-    {i18n.HEADER.ABOUT}
+    {i18n.header.about}
   </h2>
   <article class="flex flex-col items-center justify-center gap-8 md:flex-row"> 
     <div class="[&>p]:mb-4 text-pretty"> 
-      <p set:html={i18n.ABOUT}></p>      
+      <p set:html={i18n.about.summary}></p>               
     </div>    
   </article> 
 </section>
+
+<script>  
+  import { annotate, annotationGroup } from 'rough-notation'
+  
+  
+  const markUnderline = annotate(document.querySelector('.markUnderline'), { type: 'underline',  padding: [1, 5],  strokeWidth: 2 } );
+  const markBracket = annotate(document.querySelector('.markBracket'), { type: 'bracket', padding: [1, 5], brackets: ['left', 'right'] })
+  const ag = annotationGroup([markUnderline, markBracket]);
+  ag.show();  
+</script>
