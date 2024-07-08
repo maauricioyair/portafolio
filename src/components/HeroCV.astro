@@ -1,0 +1,128 @@
+---
+//Internalization
+import { getI18N } from "../i18n/"
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+
+
+import Mail from "@/assets/Mail.astro"
+import Phone from "@/assets/Phone.astro"
+import LinkedIn from "@/assets/LinkedIn.astro"
+import GitHub from "@/assets/GitHub.astro"
+import Country from "@/assets/Country.astro"
+import World from "@/assets/World.astro"
+
+const { name, label, image, location, profiles, phone, email, url } = i18n.basics
+const { city, region } = location
+
+const SOCIAL_ICONS: Record<string, any> = {
+  GitHub,
+  LinkedIn,
+}
+const linkedInfo = profiles.find(({ network }) => network === "LinkedIn")
+const linkedUrl = linkedInfo?.url
+
+const printInfo = [email, phone, url].filter(Boolean).join(" • ")
+
+---
+
+<section class="mb-7">
+  <div class="flex flex-col md:flex-row items-center justify-start gap-8">    
+    <figure class="no-print">
+      <img src={image} alt={name} class="aspect-square object-cover w-32 rounded-2xl" />
+    </figure>
+
+    <div class="flex justify-center items-center pr-0 text-center md:items-start md:justify-start flex-col gap-2 md:gap-1 md:pr-8">
+      <h1 class="text-2xl">{name}</h1>
+      <h2 class="text-base text-balance font-medium dark:text-slate-200">{label}</h2>
+      <span class="flex items-center gap-1">
+        <Country />
+        {city}, {region}
+      </span>
+      <footer class="print">
+        <p>{printInfo}</p>
+      </footer>
+      <footer class="no-print">
+        {
+          url && (
+            <a
+              href={url}
+              title={`Visita mí portafolio de proyectos: ${url}`}
+              target="_self"
+              rel="noopener noreferrer"
+              class="hover:bg-color-light-extra dark:bg-color-black-extra dark:hover:bg-hover-dark border-1 border-r border-t border-l border-b border-solid dark:border-border-dark"
+            >
+              <World />
+            </a>
+          )
+        }
+        {
+          email && (
+            <a
+              href={`mailto:${email}`}
+              title={`Enviame un correo electrónico al correo: ${email}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:bg-color-light-extra dark:bg-color-black-extra dark:hover:bg-hover-dark border-1 border-r border-t border-l border-b border-solid dark:border-border-dark"
+            >
+              <Mail />
+            </a>
+          )
+        }
+        {
+          phone && (
+            <a
+              href={`tel:${phone}`}
+              title={`Contactame por teléfono al número: ${phone}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:bg-color-light-extra dark:bg-color-black-extra dark:hover:bg-hover-dark border-1 border-r border-t border-l border-b border-solid dark:border-border-dark"
+            >
+              <Phone />
+            </a>
+          )
+        }
+        {
+          profiles.map(({ network, url, username }) => {
+            const Icon = SOCIAL_ICONS[network]
+
+            return (
+              <a 
+                href={url} 
+                title={`Visita mí perfil de ${network}: ${url}`} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="hover:bg-color-light-extra dark:bg-color-black-extra dark:hover:bg-hover-dark border-1 border-r border-t border-l border-b border-solid dark:border-border-dark"
+                >
+                <Icon />
+              </a>
+            )
+          })
+        }
+      </footer>
+    </div>
+  </div>
+</section>
+
+
+<style>   
+
+  footer {      
+    display: flex;
+    gap: 4px;
+    margin-top: 1px;
+  }
+
+  footer a {    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;    
+    padding: 4px;
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+</style>

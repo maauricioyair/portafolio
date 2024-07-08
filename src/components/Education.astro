@@ -1,0 +1,74 @@
+---
+import Book from "@assets/Book.astro"
+
+//Internalization
+import { getI18N } from "../i18n/"
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
+---
+
+<section class="mb-7">
+  <h2 class="mb-2 font-bold text-2xl">{i18n.labels.label_education}</h2>
+  <ul class="flex flex-col gap-4">
+    {
+      i18n.education.map(({ institution, startDate, endDate, area, url, highlights }) => {
+        const startYear = new Date(startDate).getFullYear()
+        const endYear =
+          endDate != null ? new Date(endDate).getFullYear() : "Actual"
+        const years = `${startYear} - ${endYear}`
+
+        return (
+          <li>
+            <article>
+              <header class="mb-1">                
+                <h3 class="font-semibold text-lg flex flex-wrap gap-x-2">{area}</h3>
+                <time class="text-right">{years}</time>
+              </header>
+              <footer>
+                <h4 class="font-normal my-2">
+                  <a 
+                    href={url} 
+                    title={`Ver ${institution}`} 
+                    target="_blank"
+                    class="hover:underline"
+                    >                        
+                      {institution}
+                    </a>
+                </h4> 
+                <ul class="inline-flex items-center gap-2 flex-wrap">  
+                    <li>
+                      <Book />
+                    </li>                   
+                    {
+                      highlights.map(highlight => 
+                        <li class="truncate border-1 border-r border-t border-l border-b border-solid group-hover:bg-transparent group-hover:text-white bg-color-light-extra dark:bg-color-black-extra px-2 py-1 text-xs rounded">
+                        <span>{highlight}</span>
+                        </li>
+                      )
+                    }
+                  </ul>     
+              </footer>
+            </article>
+          </li>
+        )
+      })
+    }
+  </ul>
+</section>
+
+
+<style>  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;    
+  }
+
+  time {
+    color: #555;
+    font-size: 0.85rem;
+    min-width: 102px;
+  }
+    
+</style>

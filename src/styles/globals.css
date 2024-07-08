@@ -89,3 +89,22 @@ h1, h2, h3, h4, h5, h6 {
 		background: linear-gradient(0deg,rgba(22,22,22) 0%,rgba(22,22,22,0) 100%)
 	}
 }
+
+
+.print {
+	display: none !important;
+}
+
+@media print {
+	.no-print {
+		display: none !important;
+	}
+
+	.print {
+		display: block !important;
+	}
+
+	astro-dev-toolbar {
+		display: none !important;
+	}	
+}
