@@ -30,12 +30,9 @@
 
 # Portable Network Graphics
 *.png
-!screenshot.png
 !flag-eeuu.png
 !flag-mx.png
-!screenshot-gti.png
-!screenshot-raesal.png
-!screenshot-tpx.png
+
 
 # Animated Portable Network Graphics
 *.apng
