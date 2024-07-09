@@ -44,6 +44,20 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		<meta name="twitter:site" content="@mauricioyair" />
 		<meta name="twitter:creator" content="@mauricioyair" />
 
+		<!-- Google tag (gtag.js) -->
+		<script 
+			async 
+			src="https://www.googletagmanager.com/gtag/js?id=G-DL0390MJXK"
+			type="text/partytown"
+		></script>
+
+		<script type="text/partytown">
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-DL0390MJXK');
+		</script>
+		
 	</head>
 	<body>
 		<slot />
