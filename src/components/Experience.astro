@@ -64,18 +64,20 @@ const i18n = getI18N({ currentLocale })
                     </div>
                     )
                   } 
-                  <ul class="inline-flex items-center gap-2 flex-wrap">  
-                    <li>
-                      <Stack />
-                    </li>                  
-                    {
-                      highlights.map(highlight => 
-                        <li class="truncate border-1 border-r border-t border-l border-b border-solid group-hover:bg-transparent group-hover:text-white bg-color-light-extra dark:bg-color-black-extra px-2 py-1 text-xs rounded">
-                        <span>{highlight}</span>
-                        </li>
-                      )
-                    }
-                  </ul> 
+                  <div class="flex items-center gap-3">
+                    <Stack />
+                    <div class="flex-1">
+                      <ul class="inline-flex items-center gap-2 flex-wrap">  
+                      {
+                        highlights.map(highlight => 
+                          <li class="truncate border-1 border-r border-t border-l border-b border-solid group-hover:bg-transparent group-hover:text-white bg-color-light-extra dark:bg-color-black-extra px-2 py-1 text-xs rounded">
+                          <span>{highlight}</span>
+                          </li>
+                        )
+                      }
+                      </ul> 
+                    </div>
+                  </div>                                      
                 </footer>
               </article>
             </li>
