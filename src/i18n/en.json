@@ -15,8 +15,8 @@
     "image": "https://avatars.githubusercontent.com/u/35882034?v=4",
     "email": "yairchavez555@gmail.com",
     "phone": "4424652866",
-    "url": "https://mauricioyair.github.io/portafolio",
-    "summary": "I am actively looking for an opportunity as a Web Developer, taking advantage of my strong background. I stand out for my organized approach and my innate curiosity to understand the inner workings of technologies. I am committed to continuous learning and excited to contribute my experience to the development of innovative projects.",
+    "url": "https://mauricioyair.dev",
+    "summary": "I am currently looking for an opportunity as a web application developer. I stand out for my organized approach and curiosity to understand the inner workings of technologies. I am committed to continuous learning and excited to contribute my experience to the development of innovative projects",
     "others": {
       "name": "Hi, I'm Mauricio ✌🏻",
       "ocupation_1": "Engineer",
@@ -65,7 +65,7 @@
         "Using GIT for version control"                     
       ],
       "achievements": "I contributed to improve user experience, optimize loading performance and come up with new innovative ideas.",        
-      "highlights": ["HTML5", "CSS3", "JavaScript", "jQuery","PHP", "MySQL", "WordPress" ,"Woocommerce" ,"Shopify"]
+      "highlights": ["HTML5", "CSS3", "JavaScript", "jQuery", "Boostrap", "PHP", "MySQL", "WordPress", "Woocommerce", "Shopify", "Figma"]
     },
     {
       "name": "Mercadology",
@@ -106,7 +106,7 @@
       "startDate": "2016-01-02",
       "endDate": "2019-08-01",
       "score": "10",
-      "highlights": ["Java", "Codeigniter", "Android Studio", "Ionic", "MySQL", "Ubuntu"]
+      "highlights": ["Java", "Python", "Codeigniter", "Android Studio", "Ionic", "MySQL", "Ubuntu"]      
     }
   ],
   "awards": [
@@ -246,7 +246,7 @@
       "highlights": [""],
       "url": "https://mauricioyair.github.io/To-do/",
       "github": "",
-      "image": "https://github.com/mauricioyair/To-do/blob/main/public/to-do-sc.png?raw=true",
+      "image": "https://res.cloudinary.com/ddgwmlaim/image/upload/v1720549250/edxh4qvy8nvx8ar0iwtu.png",
       "skills": ["React", "CSS", "JavaScript"]
     },   
     {
@@ -257,7 +257,7 @@
       "highlights": [""],
       "url": "https://raesal.com.mx",
       "github": "",
-      "image": "/src/assets/screenshot-raesal.png",
+      "image": "https://res.cloudinary.com/ddgwmlaim/image/upload/v1720548968/wip3iugwgmc0edc3ndk2.png",
       "skills": ["Astro", "React", "Tailwind"]
     },   
     {
@@ -268,7 +268,7 @@
       "highlights": [""],
       "url": "http://gtitrailers.com",
       "github": "",
-      "image": "./src/assets/screenshot-gti.png",
+      "image": "https://res.cloudinary.com/ddgwmlaim/image/upload/f_auto,q_auto/bnyzj6mdl5wew4ad9nmh",
       "skills": ["WordPress", "Elementor", "PHP", "MySQL"]
     },   
     {
@@ -279,7 +279,7 @@
       "highlights": [""],
       "url": "https://tpx.mx",
       "github": "",
-      "image": "/src/assets/screenshot-tpx.png",
+      "image": "https://res.cloudinary.com/ddgwmlaim/image/upload/v1720549025/ukcnezdkh0sz8ba4ue36.png",
       "skills": ["WordPress", "Tailwind", "HTML"]
     }
   ],
@@ -289,6 +289,7 @@
   "labels": {
     "label_description_projects": "These are some of the projects I have worked on as a freelancer and personal projects.",
     "label_experience": "Work experience",
+    "label_resumen": "Summary",
     "label_education": "Education",
     "label_language": "Languages",
     "label_soft_skills": "Soft Skills",
