@@ -5,7 +5,7 @@ import Layout from '@/layouts/Layout.astro';
 import HeroCV from '@/components/HeroCV.astro';
 import Experience from '@/components/Experience.astro';
 import Education from '@/components/Education.astro';
-import HardSkills from '@/components/HardSkills.astro';
+import Resume from '@/components/Resume.astro';
 import SoftSkills from '@/components/SoftSkills.astro';
 import Languages from '@/components/Languages.astro';
 import Certificates from '@/components/Certificates.astro';
@@ -23,9 +23,9 @@ const i18n = getI18N({ currentLocale })
 
 	<main class="m-auto w-full p-4 md:p-12 md:w-[800px] max-w-cal">
 		<HeroCV />
+		<Resume />
 		<Experience />
 		<Education />		
-		<!-- <HardSkills /> -->
 		<SoftSkills />
 		<Languages />
     <Certificates />
