@@ -16,7 +16,7 @@
     "email": "yairchavez555@gmail.com",
     "phone": "4424652866",
     "url": "https://mauricioyair.dev",
-    "summary": "I am currently looking for an opportunity as a web application developer. I stand out for my organized approach and curiosity to understand the inner workings of technologies. I am committed to continuous learning and excited to contribute my experience to the development of innovative projects",
+    "summary": "Frontend web developer with five years of experience. My current focus is Astro.build, React.js and WordPress. I stand out for my organized approach and curiosity to understand the inner workings of technologies. I am committed to continuous learning and excited to contribute my expertise to the development of innovative projects.",
     "others": {
       "name": "Hi, I'm Mauricio ✌🏻",
       "ocupation_1": "Engineer",
@@ -54,18 +54,18 @@
       "startDate": "2020-09-28",
       "endDate": "2023-11-30",
       "summary": [
-        "Implementation of websites and online stores in WooCommerce and Shopify",
-        "Multilingual page creation",
-        "Creation of themes and plug-ins to meet website requirements",
+        "Implementation of multilingual websites and online stores in WooCommerce and Shopify",        
+        "Creation of themes, plug-ins, post types and custom fields to meet website requirements",
         "Training and support for content creators and administrators to use WordPress effectively",
-        "Experience in deploying in shared server environments",
+        "Deployment in shared server environments",
         "Landing page development and e-mail structure",
         "E-commerce payment gateway integrations",
         "Ongoing maintenance and support of production sites",        
         "Using GIT for version control"                     
       ],
-      "achievements": "I contributed to improve user experience, optimize loading performance and come up with new innovative ideas.",        
-      "highlights": ["HTML5", "CSS3", "JavaScript", "jQuery", "Boostrap", "PHP", "MySQL", "WordPress", "Woocommerce", "Shopify", "Figma"]
+      "achievements": "I contributed in several projects improving the user experience and resolving issues in legacy developments. In addition, documenting the developments made.",        
+      "highlights": ["HTML5", "CSS3", "JavaScript ES6", "jQuery 3.7.1", "Bootstrap 4.3.1", "PHP 7.4>", "MySQL 8.0", "WordPress 5.0>", "Git 2.24.2", "Shopify"],
+      "tools": ["Figma", "Sketch", "Visual Studio Code", "Xampp", "LocalWP", "Wamp Server", "WHM", "Google Meet", "Slack", "Basecamp", "Powerpoint", "Word"]
     },
     {
       "name": "Mercadology",
@@ -77,11 +77,12 @@
       "summary": [
         "Website development in WordPress CMS",
         "Use of visual layout builders, Elementor, WP Backery, Gutenberg",
-        "Optimizing and configuring WordPress for performance, security and SEO",
-        "Traffic monitoring in Google Analytics and Google Search Console"
+        "Optimization and configuration of WordPress to improve performance, security and SEO",
+        "Traffic monitoring in Google Analytics 3 and Google Search Console"
       ],
-      "achievements": "I worked as a team to increase organic positioning.", 
-      "highlights": ["WordPress", "SEO", "Elementor"]
+      "achievements": "I worked as a team to increase organic positioning and performance.", 
+      "highlights": ["WordPress"],
+      "tools": ["Adobe XD", "Sublime Text", "Atom", "Xampp", "Slack", "Asana", "GA3", "GSC"]
     }    
   ],
   "volunteer": [
